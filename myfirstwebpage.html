@@ -1,0 +1,20 @@
+ <script>  
+function answer(answer)  
+{  
+        if(answer=="b")  
+          {  
+             document.getElementById("result").innerHTML = "<h1>Turn Off LED</h1>";  
+             document.getElementById("result").style.backgroundColor = "#00CC00";  
+             document.getElementById("result").style.color = "#FFFFFF";   
+        }else  
+        {  
+            document.getElementById("result").innerHTML = "<h1>Turn on LED</h1>";  
+            document.getElementById("result").style.backgroundColor = "#CC0000";  
+            document.getElementById("result").style.color = "#FFFFFF";  
+        }  
+}  
+document.write("<div id='result'></div>");  
+document.write("<h2>Please click to adjust LED</h2>"); 
+document.write("<br/><span onclick=answer('a')>on</span>");  
+document.write("<br/><span onclick=answer('b')>off</span>");    
+</script> 
